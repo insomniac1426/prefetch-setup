@@ -7,6 +7,7 @@ This project is an attempt to understand setup prefetch on different setup of pr
 #### Setup no bundler project
 
 > npm install
+
 > npm run dev-1
 
 This will run the no bundler project, this project is setup like an SPA,
