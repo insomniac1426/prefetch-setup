@@ -3,7 +3,7 @@ var path = require("path");
 
 const app = new express();
 
-app.use("/static", express.static("webpackjs/dist/js"));
+app.use("/static", express.static("vanilla-js-webpack/dist/js"));
 
 app.get("/favicon.ico", (req, res, next) => {
   return res.sendFile(path.resolve(__dirname, "../../assets/p-favicon.ico"));

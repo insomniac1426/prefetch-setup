@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-1": "nodemon ./nobundler/server/index.js",
-    "dev-2": "webpack serve --config ./webpackjs/webpack.client.js",
-    "build-2": "webpack --config ./webpackjs/webpack.build.client.js"
+    "dev-1": "nodemon ./vanilla-js-no-webpack/server/index.js",
+    "dev-2": "webpack serve --config ./vanilla-js-webpack/webpack.client.js",
+    "build-2": "webpack --config ./vanilla-js-webpack/webpack.build.client.js"
   },
   "author": "yash bansal",
   "license": "ISC",

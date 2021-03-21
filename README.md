@@ -9,7 +9,7 @@ Most modern computer processors have fast and local cache memory in which prefet
 
 ---
 
-#### Setup no bundler project
+#### Setup prefetch for vanilla JS with no webpack bundling
 
 > npm install
 
@@ -20,7 +20,7 @@ when navigation is used, index.js manipulates the inner HTML to update the page 
 
 ---
 
-#### Setup webpack non react prefetch
+#### Setup prefetch for vanilla JS project with webpack bundling
 
 [web.dev link](https://web.dev/link-prefetch/)
 
@@ -36,7 +36,7 @@ when navigation is used, index.js manipulates the inner HTML to update the page 
 
 > npm run build-2
 
-> npx nodemon webpackjs/server/index.js
+> npx nodemon vanilla-js-webpack/server/index.js
 
 #### Waterfall for the app
 

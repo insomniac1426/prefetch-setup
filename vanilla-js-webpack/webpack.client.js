@@ -3,7 +3,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./webpackjs/client/public/js/index.js",
+  entry: "./vanilla-js-webpack/client/public/js/index.js",
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
@@ -44,7 +44,7 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: "./webpackjs/client/index.html",
+      template: "./vanilla-js-webpack/client/index.html",
       filename: "index.html",
     }),
   ],
