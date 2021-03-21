@@ -7,22 +7,27 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev-1": "nodemon ./vanilla-js-no-webpack/server/index.js",
     "dev-2": "webpack serve --config ./vanilla-js-webpack/webpack.client.js",
-    "build-2": "webpack --config ./vanilla-js-webpack/webpack.build.client.js"
+    "build-2": "webpack --config ./vanilla-js-webpack/webpack.build.client.js",
+    "dev-3": "webpack serve --config ./react-ssr-loadable/webpack.client.js"
   },
   "author": "yash bansal",
   "license": "ISC",
   "dependencies": {
+    "@babel/preset-react": "^7.12.13",
     "express": "^4.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/plugin-transform-runtime": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
+    "@loadable/component": "^5.14.1",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.1.3",
     "html-webpack-plugin": "^5.3.1",
     "nodemon": "^2.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.27.1",
     "webpack-cli": "^4.5.0",
