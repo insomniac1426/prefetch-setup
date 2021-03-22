@@ -1,15 +1,13 @@
 const path = require("path");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const LoadablePlugin = require("@loadable/webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./react-ssr-loadable/client/index.js",
+  entry: "./react-ssr-loadable/client/client-side-render.js",
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
     chunkFilename: "[id].[chunkhash].js",
-    publicPath: "/static/",
   },
   optimization: {
     splitChunks: {
@@ -55,6 +53,11 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
   },
-  plugins: [new LoadablePlugin(), new CleanWebpackPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./react-ssr-loadable/client/index.html",
+      filename: "index.html",
+    }),
+  ],
   devtool: "source-map",
 };

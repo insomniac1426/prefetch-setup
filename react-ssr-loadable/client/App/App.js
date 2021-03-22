@@ -1,23 +1,21 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect } from "react";
 import loadable from "@loadable/component";
+import Navigation from "../components/Navigation";
 
 const Home = loadable(() =>
   import(
     /* webpackChunkName: "home" */
     /* webpackPrefetch: true */
-    "../pages/Home"
+    "../pages/Home/index.js"
   )
 );
 const About = loadable(() =>
   import(
     /* webpackChunkName: "about" */
     /* webpackPrefetch: true */
-    "../pages/About"
+    "../pages/About/index.js"
   )
 );
-
-import "./styles.css";
-import Navigation from "../components/Navigation";
 
 const Router = ({ route }) => {
   switch (route) {
@@ -31,7 +29,7 @@ const Router = ({ route }) => {
 };
 
 const App = () => {
-  const [route, setRoute] = useState(window.location.pathname);
+  const [route, setRoute] = useState("/");
 
   useEffect(() => {
     window.onpopstate = (e) => {
