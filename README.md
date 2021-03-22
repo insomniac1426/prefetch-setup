@@ -82,3 +82,12 @@ const About = loadable(() =>
     )
 );
 ```
+
+**With Prefetch magic comments**
+
+![Screenshot 2021-03-23 at 3 00 56 AM](https://user-images.githubusercontent.com/19567362/112062912-9e247500-8b86-11eb-8b34-6885d0e5affa.png)
+
+
+**Without Prefetch magic comments**
+
+![Screenshot 2021-03-23 at 3 19 08 AM](https://user-images.githubusercontent.com/19567362/112062973-b6948f80-8b86-11eb-88cf-b815006dcecd.png)
